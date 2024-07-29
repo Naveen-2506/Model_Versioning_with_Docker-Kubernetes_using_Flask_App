@@ -1,0 +1,46 @@
+Docker_cmd:01:06 PM 19-11-2023
+
+docker create "Image-Name"
+==> it's create the container.
+
+docker start "Container-ID"
+==> it's kick start our container.
+
+docker start -a "Container-ID"
+==> if we use "-a" after the start cmd, it will show the container actions in terminal.
+
+docker run "Image-Name or Container-ID"
+==> start to run the container.
+
+docker run Image-Name echo "our message"(hello-world) 
+==> we can pass the cmd inside of container and it's had other purposes also.
+
+docker run "Image-Name" ls 
+==> we can see inside of containers like, files & folders.
+
+docker ps 
+==> it will show the current running docker containers.
+
+docker ps --all 
+==> this cmd show the status, entier histroy of currently running and before runned contrainer details.
+
+docker system prune 
+==> this cmd helps us to delete stopped containers and other unused containers. And the clear the unwanted container space in our system.
+
+docker logs "Container-ID"
+==> it will show the entire existing process and what we done before in that particular container. simply to say it will show the logs.
+
+docker stop "Container-ID"
+==> it will shutdown the container temporarily, we can start the container with same ID.
+
+docker kill "Container-ID"
+==> it will permanently kill that container, we can't use that container again. it will reach exited state. So it's not recommended for all time. 
+
+docker pull "Container link or coordinates" (eg: docker pull dpage/pgadmin4)
+==> already contained package of any software, we can take pull and use in docker locally and within the docker container only.
+
+docker exec -it "Container-ID" "executable cmd"(eg: sql shell)
+==> after pulled image of software we can execute the cmd inside of container and run the process of that software. And "-it" is important keyword of run the cmd inside of container.
+
+docker exec -it "Container-ID" sh
+==> we can get full access of terminal to the contact of container.

@@ -1,0 +1,30 @@
+okay this my Dataops plan:
+
+Before Training:
+
+1. Do ETL process through Data engineering like, 
+	i) Data Extraction,Transform and load. 
+	ii) Data Annotation(Try to automate after 1st model Training)
+	iii) Dataset preperation.
+
+2. Data quality check like,
+	i) Find and Remove Duplication.
+	ii) Dataset quality check with classes and try to create dataset equally for all classes.
+	iii) if it's need do data augumentation.
+
+After Training:
+
+3. Data Security - push the training repo to github repository it's our choice like,
+	i) push entire repo (or),
+	ii) push dataset with weights (or),
+	iii) push weights only with weights details such as class names and our old Gdrive storing style.
+	iv) make simple documentation about weights and that project details.
+
+4. Data integration - 
+	i) write the python script using flask and create the application with model for local api
+	ii) After deploy the app into Google Cloud Platform it will generated as the HTTPS link.
+	iii) After that HTTPS link covert into API using POSTMAN API.
+
+Docker: 
+docker build -t my-yolo-app .
+docker run -p 8080:80 my-yolo-app

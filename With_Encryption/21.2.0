@@ -1,0 +1,6 @@
+Collecting Gunicorn
+  Using cached gunicorn-21.2.0-py3-none-any.whl (80 kB)
+Requirement already satisfied: packaging in c:\users\navee\anaconda3\lib\site-packages (from Gunicorn) (21.3)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\navee\anaconda3\lib\site-packages (from packaging->Gunicorn) (3.0.9)
+Installing collected packages: Gunicorn
+Successfully installed Gunicorn-21.2.0
